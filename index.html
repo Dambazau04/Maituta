@@ -20,7 +20,7 @@
     </script>
     <style>
         /* ============================================================
-           ROOT VARIABLES & RESET
+           ROOT VARIABLES & RESET (unchanged)
            ============================================================ */
         :root {
             --primary-green: #0B5E2B;
@@ -102,7 +102,7 @@
         }
 
         /* ============================================================
-           ANIMATIONS
+           ANIMATIONS (unchanged)
            ============================================================ */
         @keyframes fadeUp {
             from {
@@ -199,7 +199,7 @@
         }
 
         /* ============================================================
-           BUTTONS
+           BUTTONS (unchanged)
            ============================================================ */
         .btn-primary {
             background: linear-gradient(135deg, var(--primary-green), #084A22);
@@ -274,7 +274,7 @@
         }
 
         /* ============================================================
-           HEADER
+           HEADER (unchanged)
            ============================================================ */
         .sticky-header {
             position: sticky;
@@ -411,7 +411,7 @@
         }
 
         /* ============================================================
-           MOBILE DRAWER
+           MOBILE DRAWER (unchanged)
            ============================================================ */
         .mobile-drawer-overlay {
             position: fixed;
@@ -463,7 +463,7 @@
         }
 
         /* ============================================================
-           BOTTOM NAV (mobile)
+           BOTTOM NAV (mobile) (unchanged)
            ============================================================ */
         .mobile-bottom-nav {
             display: none;
@@ -522,7 +522,7 @@
         }
 
         /* ============================================================
-           HERO
+           HERO (unchanged)
            ============================================================ */
         .hero-section {
             background: linear-gradient(135deg, rgba(8, 74, 34, 0.92), rgba(11, 94, 43, 0.88)),
@@ -613,7 +613,7 @@
         }
 
         /* ============================================================
-           TOAST
+           TOAST (unchanged)
            ============================================================ */
         .toast-container {
             position: fixed;
@@ -648,7 +648,7 @@
         }
 
         /* ============================================================
-           LOGIN PAGE
+           LOGIN PAGE (updated with tutor role)
            ============================================================ */
         .login-page {
             padding: 2rem 1rem;
@@ -752,7 +752,7 @@
         }
 
         /* ============================================================
-           DASHBOARD LAYOUT
+           DASHBOARD LAYOUT (unchanged)
            ============================================================ */
         .dash-layout {
             display: grid;
@@ -874,7 +874,7 @@
         }
 
         /* ============================================================
-           DASHBOARD CARDS
+           DASHBOARD CARDS (unchanged)
            ============================================================ */
         .dash-stats-grid {
             display: grid;
@@ -915,7 +915,7 @@
         }
 
         /* ============================================================
-           COURSE CARDS
+           COURSE CARDS (updated with flyer)
            ============================================================ */
         .course-grid {
             display: grid;
@@ -938,15 +938,12 @@
             transform: translateY(-4px);
             box-shadow: var(--shadow-md);
         }
-        .course-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--gold), var(--primary-green));
-            opacity: 0.6;
+        .course-card .course-flyer {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            margin-bottom: 0.5rem;
         }
         .course-card .course-icon {
             font-size: 1.6rem;
@@ -998,7 +995,7 @@
         }
 
         /* ============================================================
-           COURSE DETAIL VIEW - Premium Design
+           COURSE DETAIL VIEW - Premium Design (updated with flyer)
            ============================================================ */
         .course-detail-container {
             max-width: 1000px;
@@ -1015,16 +1012,12 @@
             position: relative;
             overflow: hidden;
         }
-        .course-detail-container .course-hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.04), transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
+        .course-detail-container .course-hero .course-flyer {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            margin-bottom: 0.8rem;
         }
         .course-detail-container .course-hero h1 {
             font-family: var(--font-heading);
@@ -1159,7 +1152,7 @@
         }
 
         /* ============================================================
-           TUTOR DETAIL VIEW
+           TUTOR DETAIL VIEW (unchanged)
            ============================================================ */
         .tutor-detail-container {
             max-width: 800px;
@@ -1214,7 +1207,7 @@
         }
 
         /* ============================================================
-           LESSON VIEW
+           LESSON VIEW (unchanged)
            ============================================================ */
         .lesson-container {
             max-width: 820px;
@@ -1281,7 +1274,7 @@
         }
 
         /* ============================================================
-           QUIZ
+           QUIZ (updated for manual quiz)
            ============================================================ */
         .quiz-container {
             max-width: 700px;
@@ -1356,7 +1349,7 @@
         }
 
         /* ============================================================
-           CERTIFICATE - Premium Redesign
+           CERTIFICATE - Premium Redesign (unchanged)
            ============================================================ */
         .certificate-wrapper {
             max-width: 920px;
@@ -1654,7 +1647,7 @@
         }
 
         /* ============================================================
-           NOTIFICATIONS
+           NOTIFICATIONS (unchanged)
            ============================================================ */
         .notif-item {
             background: var(--white);
@@ -1681,7 +1674,7 @@
         }
 
         /* ============================================================
-           ADMIN
+           ADMIN (unchanged, but we'll add AI settings)
            ============================================================ */
         .admin-auth-overlay {
             position: fixed;
@@ -1800,7 +1793,7 @@
         }
 
         /* ============================================================
-           MODALS
+           MODALS (unchanged)
            ============================================================ */
         .modal-backdrop {
             position: fixed;
@@ -1856,7 +1849,7 @@
         }
 
         /* ============================================================
-           AI CHATBOX (Home Page)
+           AI CHATBOX (Home Page) (updated to use config)
            ============================================================ */
         .ai-chat-toggle {
             position: fixed;
@@ -2034,7 +2027,7 @@
         }
 
         /* ============================================================
-           FOOTER
+           FOOTER (unchanged)
            ============================================================ */
         .site-footer {
             background: var(--dark-navy);
@@ -2091,7 +2084,7 @@
         }
 
         /* ============================================================
-           RESPONSIVE
+           RESPONSIVE (unchanged)
            ============================================================ */
         @media (max-width: 992px) {
             .desktop-nav {
@@ -2450,7 +2443,7 @@
         }
 
         /* ============================================================
-           UTILITY
+           UTILITY (unchanged)
            ============================================================ */
         .hidden {
             display: none !important;
@@ -2614,7 +2607,7 @@
         <div class="nav-link" onclick="navigate('login');toggleDrawer();" id="login-nav-link-mobile"><i class="fas fa-sign-in-alt"></i> Login</div>
         <div class="nav-link" onclick="navigate('admin');toggleDrawer();" style="font-size:0.7rem;opacity:0.6;"><i class="fas fa-user-shield"></i> Admin</div>
         <div style="margin-top:auto;font-size:0.55rem;opacity:0.5;padding-top:0.6rem;border-top:1px solid #E2E8F0;">
-            <span style="color:var(--gold);font-weight:700;">✦</span> Maituta Academy v1.0
+            <span style="color:var(--gold);font-weight:700;">✦</span> Maituta Academy v2.0
         </div>
     </div>
 
@@ -2710,7 +2703,7 @@
             </div>
         </section>
 
-        <!-- ======== LOGIN ======== -->
+        <!-- ======== LOGIN (updated with tutor) ======== -->
         <section id="view-login" class="page-view" style="display:none;">
             <div class="login-page">
                 <div class="login-card">
@@ -2722,6 +2715,7 @@
 
                     <div class="login-role-tabs">
                         <button class="active" data-role="member" onclick="setLoginRole('member')">Member</button>
+                        <button data-role="tutor" onclick="setLoginRole('tutor')">Tutor</button>
                         <button data-role="admin" onclick="setLoginRole('admin')">Admin</button>
                     </div>
 
@@ -2733,7 +2727,7 @@
                             <input type="text" id="login-id-input" placeholder="e.g., 08012345678" required />
                         </div>
                         <div class="form-group">
-                            <label>Password * <span style="font-weight:400;font-size:0.65rem;color:#94A3B8;">(default: Maituta)</span></label>
+                            <label>Password *</label>
                             <input type="password" id="login-password-input" placeholder="Enter password" required />
                         </div>
                         <button type="submit" class="btn-primary btn-gold" style="width:100%;justify-content:center;padding:0.5rem;"><i class="fas fa-sign-in-alt"></i> Access Academy</button>
@@ -2746,7 +2740,7 @@
             </div>
         </section>
 
-        <!-- ======== DASHBOARD ======== -->
+        <!-- ======== DASHBOARD (member) - updated with settings ======== -->
         <section id="view-dashboard" class="page-view" style="display:none;">
             <div class="dash-sidebar-overlay" id="dash-overlay" onclick="closeDashSidebar()"></div>
             <div class="dash-layout">
@@ -2762,6 +2756,7 @@
                     <button class="dash-nav-item" onclick="switchDashTab('notifications')"><i class="fas fa-bell"></i> Notifications <span class="badge-dot" id="notif-dot" style="display:none;"></span></button>
                     <button class="dash-nav-item" onclick="switchDashTab('tutor')"><i class="fas fa-chalkboard-user"></i> Tutor Bio</button>
                     <button class="dash-nav-item" onclick="switchDashTab('change-course')"><i class="fas fa-exchange-alt"></i> Change Course</button>
+                    <button class="dash-nav-item" onclick="switchDashTab('settings')"><i class="fas fa-cog"></i> Settings</button>
                     <button class="dash-nav-item" onclick="logoutMember()"><i class="fas fa-sign-out-alt"></i> Logout</button>
                 </div>
 
@@ -2785,6 +2780,7 @@
                                 <button class="btn-primary btn-sm" onclick="switchDashTab('mycourse')"><i class="fas fa-book-open"></i> My Course</button>
                                 <button class="btn-primary btn-sm btn-gold" onclick="switchDashTab('certificates')"><i class="fas fa-certificate"></i> Certificate</button>
                                 <button class="btn-primary btn-sm btn-outline" onclick="switchDashTab('tutor')"><i class="fas fa-chalkboard-user"></i> Tutor</button>
+                                <button class="btn-primary btn-sm btn-gold" onclick="switchDashTab('settings')"><i class="fas fa-cog"></i> Settings</button>
                             </div>
                         </div>
                     </div>
@@ -2842,11 +2838,38 @@
                             <div id="change-requests-list"></div>
                         </div>
                     </div>
+
+                    <!-- Settings (Member) -->
+                    <div id="dash-subtab-settings" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">Account Settings</h2>
+                        <div style="background:var(--white);padding:1rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;max-width:500px;">
+                            <h4 style="font-weight:700;color:var(--dark-navy);font-size:0.9rem;">Change Password</h4>
+                            <div class="form-group">
+                                <label>Current Password</label>
+                                <input type="password" id="member-current-password" placeholder="Enter current password" />
+                            </div>
+                            <div class="form-group">
+                                <label>New Password</label>
+                                <input type="password" id="member-new-password" placeholder="Enter new password" />
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm New Password</label>
+                                <input type="password" id="member-confirm-password" placeholder="Confirm new password" />
+                            </div>
+                            <button class="btn-primary btn-gold" onclick="changeMemberPassword()"><i class="fas fa-key"></i> Update Password</button>
+
+                            <hr style="margin:1rem 0;" />
+
+                            <h4 style="font-weight:700;color:#C61F26;font-size:0.9rem;">Delete Account</h4>
+                            <p style="font-size:0.8rem;color:#64748B;">This action is permanent and cannot be undone.</p>
+                            <button class="btn-primary btn-danger" onclick="deleteMemberAccount()"><i class="fas fa-trash"></i> Delete Account Permanently</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- ======== ADMIN ======== -->
+        <!-- ======== ADMIN (updated with AI settings and manual quiz) ======== -->
         <section id="view-admin" class="page-view" style="display:none;">
             <!-- Admin Auth Overlay -->
             <div class="admin-auth-overlay" id="admin-auth-overlay">
@@ -2893,7 +2916,8 @@
                         <button class="dash-nav-item" onclick="switchAdminTab('notifications')"><i class="fas fa-bell"></i> Notifications</button>
                         <button class="dash-nav-item" onclick="switchAdminTab('certificates')"><i class="fas fa-certificate"></i> Certificates</button>
                         <button class="dash-nav-item" onclick="switchAdminTab('course-changes')"><i class="fas fa-exchange-alt"></i> Course Changes</button>
-                        <button class="dash-nav-item" onclick="switchAdminTab('quiz')"><i class="fas fa-pencil-alt"></i> Generate Quiz</button>
+                        <button class="dash-nav-item" onclick="switchAdminTab('quiz')"><i class="fas fa-pencil-alt"></i> Quiz Management</button>
+                        <button class="dash-nav-item" onclick="switchAdminTab('ai-settings')"><i class="fas fa-robot"></i> AI Settings</button>
                         <button class="dash-nav-item" onclick="switchAdminTab('settings')"><i class="fas fa-sliders-h"></i> Settings</button>
                         <button class="dash-nav-item" onclick="logoutAdmin()"><i class="fas fa-sign-out-alt"></i> Logout</button>
                     </div>
@@ -2916,7 +2940,7 @@
                                     <button class="btn-primary btn-sm" onclick="switchAdminTab('courses')"><i class="fas fa-plus"></i> Manage Courses</button>
                                     <button class="btn-primary btn-sm btn-gold" onclick="switchAdminTab('applications')"><i class="fas fa-check"></i> Approve</button>
                                     <button class="btn-primary btn-sm btn-outline" onclick="switchAdminTab('notifications')"><i class="fas fa-bell"></i> Notify</button>
-                                    <button class="btn-primary btn-sm btn-gold" onclick="switchAdminTab('quiz')"><i class="fas fa-pencil-alt"></i> Generate Quiz</button>
+                                    <button class="btn-primary btn-sm btn-gold" onclick="switchAdminTab('quiz')"><i class="fas fa-pencil-alt"></i> Quiz Mgmt</button>
                                 </div>
                             </div>
                         </div>
@@ -3008,29 +3032,78 @@
                             </div>
                         </div>
 
-                        <!-- Generate Quiz -->
+                        <!-- Quiz Management (manual quiz) -->
                         <div id="adm-subtab-quiz" style="display:none;">
-                            <h2 style="color:var(--dark-navy);font-weight:800;font-size:0.95rem;margin-bottom:0.4rem;">Generate Quiz for Course</h2>
-                            <div style="background:var(--white);padding:1rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;max-width:500px;">
+                            <h2 style="color:var(--dark-navy);font-weight:800;font-size:0.95rem;margin-bottom:0.4rem;">Quiz Management</h2>
+                            <div style="background:var(--white);padding:1rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;max-width:700px;">
+                                <h4 style="font-weight:700;color:var(--dark-navy);font-size:0.9rem;">Create Manual Quiz</h4>
                                 <div class="form-group">
-                                    <label>Select Course</label>
-                                    <select id="admin-quiz-course" class="w-full">
-                                        <option value="">Loading courses...</option>
+                                    <label>Course</label>
+                                    <select id="manual-quiz-course" class="w-full">
+                                        <option value="">Select Course</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label>Number of Questions</label>
-                                    <input type="number" id="admin-quiz-count" value="20" min="5" max="30" />
+                                    <label>Quiz Title</label>
+                                    <input type="text" id="manual-quiz-title" placeholder="e.g., Leadership Final Quiz" />
                                 </div>
-                                <button class="btn-primary btn-gold" onclick="generateAdminQuiz()"><i class="fas fa-magic"></i> Generate Quiz</button>
-                                <div id="admin-quiz-result" style="margin-top:0.6rem;display:none;border-top:1px solid #E2E8F0;padding-top:0.5rem;">
-                                    <div style="white-space:pre-wrap;font-size:0.82rem;line-height:1.6;max-height:400px;overflow-y:auto;background:var(--light-bg);padding:0.6rem;border-radius:var(--radius-sm);"></div>
-                                    <button class="btn-primary btn-sm mt-1" onclick="copyQuizToClipboard()"><i class="fas fa-copy"></i> Copy Questions</button>
+                                <div id="manual-questions-container">
+                                    <div class="question-block" style="border:1px solid #E2E8F0;padding:0.6rem;border-radius:var(--radius-sm);margin-bottom:0.6rem;">
+                                        <div class="form-group">
+                                            <label>Question</label>
+                                            <input type="text" class="manual-q-text" placeholder="Enter question" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Options (A, B, C, D)</label>
+                                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.3rem;">
+                                                <input type="text" class="manual-q-opt" placeholder="A" />
+                                                <input type="text" class="manual-q-opt" placeholder="B" />
+                                                <input type="text" class="manual-q-opt" placeholder="C" />
+                                                <input type="text" class="manual-q-opt" placeholder="D" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Correct Answer (A-D)</label>
+                                            <select class="manual-q-answer"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select>
+                                        </div>
+                                        <button class="btn-danger btn-sm" onclick="this.closest('.question-block').remove()"><i class="fas fa-trash"></i> Remove</button>
+                                    </div>
                                 </div>
+                                <button class="btn-primary btn-sm btn-outline" onclick="addManualQuestionBlock()"><i class="fas fa-plus"></i> Add Question</button>
+                                <button class="btn-primary btn-sm btn-gold" onclick="saveManualQuiz()"><i class="fas fa-save"></i> Save Quiz</button>
+                            </div>
+                            <div style="margin-top:0.8rem;">
+                                <h4 style="font-weight:700;color:var(--dark-navy);font-size:0.85rem;">Existing Quizzes</h4>
+                                <div id="admin-quiz-list"></div>
                             </div>
                         </div>
 
-                        <!-- Settings -->
+                        <!-- AI Settings -->
+                        <div id="adm-subtab-ai-settings" style="display:none;">
+                            <h2 style="color:var(--dark-navy);font-weight:800;font-size:0.95rem;margin-bottom:0.4rem;">AI Configuration</h2>
+                            <div style="background:var(--white);padding:1rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;max-width:500px;">
+                                <div class="form-group">
+                                    <label>Groq API Key</label>
+                                    <input type="password" id="ai-api-key" placeholder="Enter Groq API Key" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Model</label>
+                                    <input type="text" id="ai-model" placeholder="e.g., llama-3.3-70b-versatile" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Temperature (0-1)</label>
+                                    <input type="number" id="ai-temperature" step="0.1" min="0" max="1" placeholder="0.7" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Max Tokens</label>
+                                    <input type="number" id="ai-max-tokens" placeholder="600" />
+                                </div>
+                                <button class="btn-primary btn-gold" onclick="saveAISettings()"><i class="fas fa-save"></i> Save AI Settings</button>
+                                <button class="btn-primary btn-sm btn-outline" onclick="resetAISettings()"><i class="fas fa-undo"></i> Reset to Default</button>
+                            </div>
+                        </div>
+
+                        <!-- Settings (Admin) -->
                         <div id="adm-subtab-settings" style="display:none;">
                             <h2 style="color:var(--dark-navy);font-weight:800;font-size:0.95rem;margin-bottom:0.4rem;">Settings</h2>
                             <div style="background:var(--white);padding:0.8rem;border-radius:var(--radius-md);max-width:500px;">
@@ -3063,6 +3136,128 @@
             </div>
         </section>
 
+        <!-- ======== TUTOR DASHBOARD (new) ======== -->
+        <section id="view-tutor-dashboard" class="page-view" style="display:none;">
+            <div class="dash-sidebar-overlay" id="tutor-dash-overlay" onclick="closeTutorDashSidebar()"></div>
+            <div class="dash-layout">
+                <div class="dash-sidebar" id="tutor-dash-sidebar">
+                    <div class="dash-profile">
+                        <i class="fas fa-chalkboard-teacher" style="font-size:1.6rem;color:var(--gold);margin-bottom:0.1rem;"></i>
+                        <div class="dash-name" id="tutor-dash-name">Tutor</div>
+                        <div class="dash-id" id="tutor-dash-id">TUT-XXXX</div>
+                    </div>
+                    <button class="dash-nav-item active" onclick="switchTutorTab('overview')"><i class="fas fa-th-large"></i> Overview</button>
+                    <button class="dash-nav-item" onclick="switchTutorTab('courses')"><i class="fas fa-book-open"></i> My Courses</button>
+                    <button class="dash-nav-item" onclick="switchTutorTab('assignments')"><i class="fas fa-tasks"></i> Assignments</button>
+                    <button class="dash-nav-item" onclick="switchTutorTab('submissions')"><i class="fas fa-file-upload"></i> Submissions</button>
+                    <button class="dash-nav-item" onclick="switchTutorTab('members')"><i class="fas fa-users"></i> Members</button>
+                    <button class="dash-nav-item" onclick="switchTutorTab('chat')"><i class="fas fa-comment-dots"></i> Chat</button>
+                    <button class="dash-nav-item" onclick="switchTutorTab('notifications')"><i class="fas fa-bell"></i> Notifications</button>
+                    <button class="dash-nav-item" onclick="switchTutorTab('settings')"><i class="fas fa-cog"></i> Settings</button>
+                    <button class="dash-nav-item" onclick="logoutTutor()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+                </div>
+
+                <div class="dash-main">
+                    <button class="dash-toggle-btn" onclick="toggleTutorDashSidebar()"><i class="fas fa-bars"></i> Menu</button>
+
+                    <!-- Tutor Overview -->
+                    <div id="tutor-subtab-overview">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;">Welcome, <span id="tutor-welcome-name">Tutor</span> 👋</h2>
+                        <div class="dash-stats-grid">
+                            <div class="stat-card"><div class="stat-number" id="tutor-course-count">0</div><div class="stat-label">Courses</div></div>
+                            <div class="stat-card gold"><div class="stat-number" id="tutor-student-count">0</div><div class="stat-label">Students</div></div>
+                            <div class="stat-card blue"><div class="stat-number" id="tutor-assignment-count">0</div><div class="stat-label">Assignments</div></div>
+                        </div>
+                        <div style="background:var(--white);padding:0.8rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;">
+                            <h4 style="font-weight:800;color:var(--dark-navy);font-size:0.85rem;">Quick Actions</h4>
+                            <div style="display:flex;flex-wrap:wrap;gap:0.3rem;margin-top:0.3rem;">
+                                <button class="btn-primary btn-sm" onclick="switchTutorTab('courses')"><i class="fas fa-book-open"></i> Manage Courses</button>
+                                <button class="btn-primary btn-sm btn-gold" onclick="switchTutorTab('assignments')"><i class="fas fa-plus"></i> New Assignment</button>
+                                <button class="btn-primary btn-sm btn-outline" onclick="switchTutorTab('members')"><i class="fas fa-users"></i> View Members</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tutor: My Courses (manage courses and lessons) -->
+                    <div id="tutor-subtab-courses" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">My Courses</h2>
+                        <div id="tutor-courses-container"></div>
+                    </div>
+
+                    <!-- Tutor: Assignments -->
+                    <div id="tutor-subtab-assignments" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">Assignments</h2>
+                        <div style="background:var(--white);padding:0.8rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;max-width:500px;">
+                            <h4 style="font-weight:700;color:var(--dark-navy);font-size:0.9rem;">Create New Assignment</h4>
+                            <div class="form-group"><label>Course</label><select id="tutor-assignment-course" class="w-full"></select></div>
+                            <div class="form-group"><label>Title</label><input type="text" id="tutor-assignment-title" placeholder="Assignment title" /></div>
+                            <div class="form-group"><label>Description</label><textarea id="tutor-assignment-desc" rows="3" placeholder="Details"></textarea></div>
+                            <div class="form-group"><label>Due Date</label><input type="datetime-local" id="tutor-assignment-due" /></div>
+                            <button class="btn-primary btn-gold" onclick="createAssignment()"><i class="fas fa-plus"></i> Create</button>
+                        </div>
+                        <div style="margin-top:0.8rem;">
+                            <h4 style="font-weight:700;color:var(--dark-navy);font-size:0.85rem;">Your Assignments</h4>
+                            <div id="tutor-assignment-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tutor: Submissions -->
+                    <div id="tutor-subtab-submissions" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">Submissions</h2>
+                        <div id="tutor-submissions-container"></div>
+                    </div>
+
+                    <!-- Tutor: Members -->
+                    <div id="tutor-subtab-members" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">Enrolled Members</h2>
+                        <div id="tutor-members-container"></div>
+                        <button class="btn-primary btn-gold mt-1" onclick="printMemberList()"><i class="fas fa-print"></i> Print List (A4 Landscape)</button>
+                    </div>
+
+                    <!-- Tutor: Chat -->
+                    <div id="tutor-subtab-chat" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">Chat with Members</h2>
+                        <div style="background:var(--white);padding:0.8rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;max-width:500px;">
+                            <div class="form-group"><label>Select Member</label><select id="tutor-chat-member" class="w-full"></select></div>
+                            <div style="border:1px solid #E2E8F0;height:200px;overflow-y:auto;padding:0.3rem;border-radius:var(--radius-sm);" id="tutor-chat-messages">
+                                <div style="color:#94A3B8;text-align:center;font-size:0.7rem;">Select a member to start chat</div>
+                            </div>
+                            <div style="display:flex;gap:0.3rem;margin-top:0.3rem;">
+                                <input type="text" id="tutor-chat-input" placeholder="Type a message..." style="flex:1;padding:0.3rem;border:1px solid #E2E8F0;border-radius:var(--radius-sm);" />
+                                <button class="btn-primary btn-sm" onclick="sendTutorChat()"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tutor: Notifications -->
+                    <div id="tutor-subtab-notifications" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">Send Notification</h2>
+                        <div style="background:var(--white);padding:0.8rem;border-radius:var(--radius-md);max-width:500px;">
+                            <div class="form-group"><label>Course</label><select id="tutor-notif-course" class="w-full"></select></div>
+                            <div class="form-group"><label>Title</label><input type="text" id="tutor-notif-title" placeholder="Title" /></div>
+                            <div class="form-group"><label>Message</label><textarea id="tutor-notif-body" rows="3" placeholder="Message"></textarea></div>
+                            <button class="btn-primary btn-gold" onclick="sendTutorNotification()"><i class="fas fa-bell"></i> Send to Course Members</button>
+                        </div>
+                    </div>
+
+                    <!-- Tutor: Settings -->
+                    <div id="tutor-subtab-settings" style="display:none;">
+                        <h2 style="color:var(--dark-navy);font-weight:800;font-size:1rem;margin-bottom:0.4rem;">Tutor Settings</h2>
+                        <div style="background:var(--white);padding:1rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;max-width:500px;">
+                            <h4 style="font-weight:700;color:var(--dark-navy);font-size:0.9rem;">Change Password</h4>
+                            <div class="form-group"><label>Current Password</label><input type="password" id="tutor-current-password" placeholder="Current" /></div>
+                            <div class="form-group"><label>New Password</label><input type="password" id="tutor-new-password" placeholder="New" /></div>
+                            <div class="form-group"><label>Confirm</label><input type="password" id="tutor-confirm-password" placeholder="Confirm" /></div>
+                            <button class="btn-primary btn-gold" onclick="changeTutorPassword()"><i class="fas fa-key"></i> Update</button>
+                            <hr style="margin:1rem 0;" />
+                            <h4 style="font-weight:700;color:#C61F26;font-size:0.9rem;">Delete Account</h4>
+                            <button class="btn-primary btn-danger" onclick="deleteTutorAccount()"><i class="fas fa-trash"></i> Delete Permanently</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- ============================================================
@@ -3080,6 +3275,7 @@
                 <div class="form-group"><label>Description *</label><textarea id="add-course-desc" rows="3" required placeholder="Course description..."></textarea></div>
                 <div class="form-group"><label>Tutor</label><select id="add-course-tutor"><option value="">Select Tutor</option></select></div>
                 <div class="form-group"><label>Intro Video (YouTube URL)</label><input type="url" id="add-course-video" placeholder="https://www.youtube.com/watch?v=..." /></div>
+                <div class="form-group"><label>Flyer Image URL</label><input type="url" id="add-course-flyer" placeholder="https://example.com/flyer.jpg" /></div>
                 <div class="form-group"><label>Icon (FontAwesome class)</label><input type="text" id="add-course-icon" value="fas fa-graduation-cap" placeholder="fas fa-graduation-cap" /></div>
                 <button type="submit" class="btn-primary btn-gold w-full" style="justify-content:center;"><i class="fas fa-plus"></i> Create Course</button>
             </form>
@@ -3111,7 +3307,7 @@
         </div>
     </div>
 
-    <!-- Add Tutor Modal -->
+    <!-- Add Tutor Modal (updated with phone and password) -->
     <div class="modal-backdrop" id="modal-add-tutor">
         <div class="modal-box">
             <div class="modal-header">
@@ -3123,7 +3319,9 @@
                 <div class="form-group"><label>Bio *</label><textarea id="add-tutor-bio" rows="4" required placeholder="Tutor biography..."></textarea></div>
                 <div class="form-group"><label>Photo URL</label><input type="url" id="add-tutor-photo" placeholder="https://example.com/photo.jpg" /></div>
                 <div class="form-group"><label>Signature URL (optional)</label><input type="url" id="add-tutor-signature" placeholder="https://example.com/signature.png" /></div>
-                <div class="form-group"><label>WhatsApp Phone *</label><input type="tel" id="add-tutor-whatsapp" required placeholder="08012345678" /></div>
+                <div class="form-group"><label>Phone (for login) *</label><input type="tel" id="add-tutor-phone" required placeholder="08012345678" /></div>
+                <div class="form-group"><label>Password (for login) *</label><input type="password" id="add-tutor-password" required placeholder="Enter password" /></div>
+                <div class="form-group"><label>WhatsApp Phone</label><input type="tel" id="add-tutor-whatsapp" placeholder="08012345678" /></div>
                 <button type="submit" class="btn-primary btn-gold w-full" style="justify-content:center;"><i class="fas fa-user-plus"></i> Add Tutor</button>
             </form>
         </div>
@@ -3173,7 +3371,7 @@
     </footer>
 
     <!-- ============================================================
-    FIREBASE & APP SCRIPT
+    FIREBASE & APP SCRIPT (updated)
     ============================================================ -->
     <script>
         // ================================================================
@@ -3194,11 +3392,16 @@
         const db = firebase.firestore();
 
         // ================================================================
-        // GROQ API KEY - Updated to use latest supported model
+        // DEFAULT GROQ CONFIG (built-in)
         // ================================================================
-        const GROQ_API_KEY = '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';
-        const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-        const GROQ_MODEL = 'llama-3.3-70b-versatile'; // Latest supported model
+        const DEFAULT_AI_CONFIG = {
+            apiKey: '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',
+            model: 'llama-3.3-70b-versatile',
+            temperature: 0.7,
+            maxTokens: 600
+        };
+
+        let aiConfig = { ...DEFAULT_AI_CONFIG };
 
         // ================================================================
         // APP STATE
@@ -3206,6 +3409,7 @@
         const state = {
             currentView: 'home',
             member: null,
+            tutor: null,
             adminAuth: false,
             adminAuthMode: 'signin',
             registrationOpen: true,
@@ -3221,7 +3425,7 @@
         };
 
         // ================================================================
-        // ROUTER / NAVIGATION
+        // ROUTER / NAVIGATION (updated with tutor dashboard)
         // ================================================================
         function navigate(view, params) {
             document.querySelectorAll('.page-view').forEach(el => el.style.display = 'none');
@@ -3240,7 +3444,7 @@
                 if (items[idx]) items[idx].classList.add('active');
             }
             // Show/hide dashboard links
-            const isLoggedIn = !!state.member;
+            const isLoggedIn = !!state.member || !!state.tutor;
             document.getElementById('dash-nav-link').style.display = isLoggedIn ? 'inline' : 'none';
             document.getElementById('dash-nav-link-mobile').style.display = isLoggedIn ? 'block' : 'none';
             document.getElementById('bottom-dash-btn').style.display = isLoggedIn ? 'flex' : 'none';
@@ -3264,8 +3468,9 @@
             if (view === 'courses') loadAllCourses();
             if (view === 'tutors') loadAllTutors();
             if (view === 'dashboard' && state.member) loadDashboardData();
-            if (view === 'dashboard' && !state.member) { showToast('Please login first.');
+            if (view === 'dashboard' && !state.member && !state.tutor) { showToast('Please login first.');
                 navigate('login'); }
+            if (view === 'tutor-dashboard' && state.tutor) loadTutorDashboardData();
             if (view === 'admin' && state.adminAuth) loadAdminData();
             if (view === 'course-detail' && params) loadCourseDetail(params.courseId);
             if (view === 'tutor-detail' && params) loadTutorDetail(params.tutorId);
@@ -3292,7 +3497,7 @@
         }, { threshold: 0.15 });
 
         // ================================================================
-        // UI HELPERS
+        // UI HELPERS (unchanged)
         // ================================================================
         function showToast(msg) {
             const container = document.getElementById('toast-wrapper');
@@ -3333,9 +3538,20 @@
             document.getElementById('admin-dash-overlay').classList.remove('active');
         }
 
+        function toggleTutorDashSidebar() {
+            document.getElementById('tutor-dash-sidebar').classList.toggle('open');
+            document.getElementById('tutor-dash-overlay').classList.toggle('active');
+        }
+
+        function closeTutorDashSidebar() {
+            document.getElementById('tutor-dash-sidebar').classList.remove('open');
+            document.getElementById('tutor-dash-overlay').classList.remove('active');
+        }
+
         function closeAllSidebars() {
             closeDashSidebar();
             closeAdminDashSidebar();
+            closeTutorDashSidebar();
         }
 
         function updateHeaderUI() {
@@ -3344,6 +3560,9 @@
             if (state.member) {
                 badge.classList.add('visible');
                 nameEl.textContent = state.member.name || 'Member';
+            } else if (state.tutor) {
+                badge.classList.add('visible');
+                nameEl.textContent = state.tutor.name || 'Tutor';
             } else {
                 badge.classList.remove('visible');
             }
@@ -3354,7 +3573,78 @@
         function closeModal(id) { document.getElementById(id).classList.remove('active'); }
 
         // ================================================================
-        // AI CHATBOX - Updated with new model
+        // AI CONFIGURATION (load from Firestore)
+        // ================================================================
+        async function loadAIConfig() {
+            try {
+                const doc = await db.collection('settings').doc('aiConfig').get();
+                if (doc.exists) {
+                    const data = doc.data();
+                    aiConfig = {
+                        apiKey: data.apiKey || DEFAULT_AI_CONFIG.apiKey,
+                        model: data.model || DEFAULT_AI_CONFIG.model,
+                        temperature: data.temperature !== undefined ? data.temperature : DEFAULT_AI_CONFIG.temperature,
+                        maxTokens: data.maxTokens || DEFAULT_AI_CONFIG.maxTokens
+                    };
+                } else {
+                    aiConfig = { ...DEFAULT_AI_CONFIG };
+                }
+            } catch (e) {
+                aiConfig = { ...DEFAULT_AI_CONFIG };
+            }
+        }
+
+        async function saveAISettings() {
+            const apiKey = document.getElementById('ai-api-key').value.trim();
+            const model = document.getElementById('ai-model').value.trim();
+            const temp = parseFloat(document.getElementById('ai-temperature').value);
+            const maxTokens = parseInt(document.getElementById('ai-max-tokens').value);
+
+            if (!apiKey || !model || isNaN(temp) || isNaN(maxTokens)) {
+                showToast('Please fill all fields correctly.');
+                return;
+            }
+
+            try {
+                await db.collection('settings').doc('aiConfig').set({
+                    apiKey,
+                    model,
+                    temperature: temp,
+                    maxTokens: maxTokens
+                }, { merge: true });
+                aiConfig = { apiKey, model, temperature: temp, maxTokens };
+                showToast('AI settings saved successfully!');
+                loadAISettingsUI();
+            } catch (err) {
+                showToast('Error: ' + err.message);
+            }
+        }
+
+        async function resetAISettings() {
+            try {
+                await db.collection('settings').doc('aiConfig').delete();
+                aiConfig = { ...DEFAULT_AI_CONFIG };
+                showToast('Reset to default AI settings.');
+                loadAISettingsUI();
+            } catch (err) {
+                showToast('Error: ' + err.message);
+            }
+        }
+
+        async function loadAISettingsUI() {
+            try {
+                const doc = await db.collection('settings').doc('aiConfig').get();
+                const data = doc.exists ? doc.data() : {};
+                document.getElementById('ai-api-key').value = data.apiKey || DEFAULT_AI_CONFIG.apiKey || '';
+                document.getElementById('ai-model').value = data.model || DEFAULT_AI_CONFIG.model || '';
+                document.getElementById('ai-temperature').value = data.temperature !== undefined ? data.temperature :
+                    DEFAULT_AI_CONFIG.temperature;
+                document.getElementById('ai-max-tokens').value = data.maxTokens || DEFAULT_AI_CONFIG.maxTokens || '';
+            } catch (e) {}
+        }
+
+        // ================================================================
+        // AI CHATBOX - uses aiConfig
         // ================================================================
         function toggleAIChat() {
             const win = document.getElementById('aiChatWindow');
@@ -3382,21 +3672,21 @@
             container.scrollTop = container.scrollHeight;
 
             try {
-                const response = await fetch(GROQ_API_URL, {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
                     method: 'POST',
                     headers: {
-                        'Authorization': 'Bearer ' + GROQ_API_KEY,
+                        'Authorization': 'Bearer ' + aiConfig.apiKey,
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        model: GROQ_MODEL,
+                        model: aiConfig.model,
                         messages: [
                             { role: 'system',
                                 content: 'You are Maituta Academy AI Tutor. Help students with their learning questions.' },
                             { role: 'user', content: msg }
                         ],
-                        temperature: 0.7,
-                        max_tokens: 600
+                        temperature: aiConfig.temperature,
+                        max_tokens: aiConfig.maxTokens
                     })
                 });
 
@@ -3424,7 +3714,7 @@
         }
 
         // ================================================================
-        // LOGIN
+        // LOGIN (updated with tutor)
         // ================================================================
         let loginRole = 'member';
 
@@ -3434,12 +3724,17 @@
                 b.classList.toggle('active', b.dataset.role === role);
             });
             const label = document.getElementById('login-id-label');
+            const input = document.getElementById('login-id-input');
+            const passInput = document.getElementById('login-password-input');
             if (role === 'admin') {
                 label.textContent = 'Email *';
-                document.getElementById('login-id-input').placeholder = 'admin@maituta.academy';
+                input.placeholder = 'admin@maituta.academy';
+            } else if (role === 'tutor') {
+                label.textContent = 'Phone Number *';
+                input.placeholder = '08012345678';
             } else {
                 label.textContent = 'Phone Number *';
-                document.getElementById('login-id-input').placeholder = 'e.g., 08012345678';
+                input.placeholder = 'e.g., 08012345678';
             }
         }
 
@@ -3456,6 +3751,39 @@
                 return;
             }
 
+            if (loginRole === 'tutor') {
+                // Tutor login
+                try {
+                    const snap = await db.collection('tutors').where('phone', '==', idVal).get();
+                    if (snap.empty) {
+                        errorEl.textContent = 'Tutor not found.';
+                        errorEl.style.display = 'block';
+                        return;
+                    }
+                    const tutorData = snap.docs[0].data();
+                    const docId = snap.docs[0].id;
+                    if (tutorData.password !== passVal) {
+                        errorEl.textContent = 'Incorrect password.';
+                        errorEl.style.display = 'block';
+                        return;
+                    }
+                    state.tutor = { ...tutorData, docId };
+                    document.getElementById('tutor-dash-name').textContent = tutorData.name || 'Tutor';
+                    document.getElementById('tutor-dash-id').textContent = tutorData.id || 'TUT-' + Date.now().toString(36)
+                        .toUpperCase();
+                    document.getElementById('tutor-welcome-name').textContent = tutorData.name || 'Tutor';
+                    updateHeaderUI();
+                    showToast('Welcome, Tutor ' + (tutorData.name || '') + '!');
+                    navigate('tutor-dashboard');
+                    loadTutorDashboardData();
+                } catch (err) {
+                    errorEl.textContent = 'Error: ' + err.message;
+                    errorEl.style.display = 'block';
+                }
+                return;
+            }
+
+            // Member login
             if (passVal !== 'Maituta') {
                 errorEl.textContent = 'Invalid password. Default is: Maituta';
                 errorEl.style.display = 'block';
@@ -3521,6 +3849,9 @@
             }
         }
 
+        // ================================================================
+        // LOGOUT FUNCTIONS
+        // ================================================================
         function logoutMember() {
             state.member = null;
             updateHeaderUI();
@@ -3529,14 +3860,17 @@
             closeDashSidebar();
         }
 
-        // ================================================================
-        // ADMIN AUTH - Removed Create Account
-        // ================================================================
-        function toggleAdminAuthMode() {
-            // No longer needed - removed create account
-            showToast('Only existing admin accounts can sign in.');
+        function logoutTutor() {
+            state.tutor = null;
+            updateHeaderUI();
+            showToast('Tutor logged out.');
+            navigate('home');
+            closeTutorDashSidebar();
         }
 
+        // ================================================================
+        // ADMIN AUTH (unchanged)
+        // ================================================================
         async function handleAdminAuth(e) {
             e.preventDefault();
             const email = document.getElementById('admin-email').value.trim();
@@ -3583,7 +3917,7 @@
         }
 
         // ================================================================
-        // LOAD HOME STATS
+        // LOAD HOME STATS (unchanged)
         // ================================================================
         async function loadHomeStats() {
             try {
@@ -3608,8 +3942,12 @@
                 let html = '';
                 snap.forEach(doc => {
                     const c = doc.data();
+                    const flyerHtml = c.flyerUrl ?
+                        `<img src="${c.flyerUrl}" class="course-flyer" alt="Flyer" loading="lazy" />` :
+                        '';
                     html += `
                         <div class="course-card animate-on-scroll" onclick="viewCourseDetail('${doc.id}')">
+                            ${flyerHtml}
                             <div class="course-icon"><i class="${c.icon || 'fas fa-graduation-cap'}"></i></div>
                             <div class="course-title">${c.title || 'Untitled'}</div>
                             <div class="course-tutor">${c.tutorName || 'Maituta Academy'}</div>
@@ -3624,7 +3962,7 @@
         }
 
         // ================================================================
-        // COURSES
+        // COURSES (with flyer)
         // ================================================================
         async function loadAllCourses() {
             try {
@@ -3638,8 +3976,12 @@
                 let html = '';
                 snap.forEach(doc => {
                     const c = doc.data();
+                    const flyerHtml = c.flyerUrl ?
+                        `<img src="${c.flyerUrl}" class="course-flyer" alt="Flyer" loading="lazy" />` :
+                        '';
                     html += `
                         <div class="course-card animate-on-scroll" onclick="viewCourseDetail('${doc.id}')">
+                            ${flyerHtml}
                             <div class="course-icon"><i class="${c.icon || 'fas fa-graduation-cap'}"></i></div>
                             <div class="course-title">${c.title || 'Untitled'}</div>
                             <div class="course-tutor">${c.tutorName || 'Maituta Academy'}</div>
@@ -3654,35 +3996,26 @@
         }
 
         // ================================================================
-        // COURSE DETAIL VIEW - Premium Design with Video Fix
+        // COURSE DETAIL (with flyer)
         // ================================================================
-        async function viewCourseDetail(courseId) {
-            navigate('course-detail', { courseId });
-        }
-
         function getYouTubeEmbedUrl(url) {
             if (!url) return null;
             let embedUrl = url;
-            // Handle youtube.com/watch?v= format
             if (url.includes('youtube.com/watch?v=')) {
                 const v = url.split('v=')[1]?.split('&')[0];
                 if (v) embedUrl = `https://www.youtube.com/embed/${v}`;
-            }
-            // Handle youtu.be/ format
-            else if (url.includes('youtu.be/')) {
+            } else if (url.includes('youtu.be/')) {
                 const v = url.split('youtu.be/')[1]?.split('?')[0];
                 if (v) embedUrl = `https://www.youtube.com/embed/${v}`;
-            }
-            // Handle youtube.com/embed/ format
-            else if (url.includes('youtube.com/embed/')) {
-                // Already an embed URL
-            }
-            // Handle youtube.com/shorts/ format
-            else if (url.includes('youtube.com/shorts/')) {
+            } else if (url.includes('youtube.com/embed/')) {} else if (url.includes('youtube.com/shorts/')) {
                 const v = url.split('shorts/')[1]?.split('?')[0];
                 if (v) embedUrl = `https://www.youtube.com/embed/${v}`;
             }
             return embedUrl;
+        }
+
+        async function viewCourseDetail(courseId) {
+            navigate('course-detail', { courseId });
         }
 
         async function loadCourseDetail(courseId) {
@@ -3697,14 +4030,11 @@
                 }
                 const course = courseDoc.data();
 
-                // Get lessons - without orderBy to avoid index requirement
                 const lessonsSnap = await db.collection('lessons').where('courseId', '==', courseId).get();
                 const lessons = [];
                 lessonsSnap.forEach(doc => { lessons.push({ ...doc.data(), docId: doc.id }); });
-                // Sort by order in memory
                 lessons.sort((a, b) => (a.order || 0) - (b.order || 0));
 
-                // Check if member is enrolled
                 let isEnrolled = false;
                 let progress = 0;
                 let completed = [];
@@ -3731,7 +4061,6 @@
                     });
                 }
 
-                // Fix video embedding
                 let videoHtml = '';
                 if (course.videoUrl) {
                     const embedUrl = getYouTubeEmbedUrl(course.videoUrl);
@@ -3762,9 +4091,11 @@
                     `;
                 }
 
-                // Build lesson count and meta
                 const lessonCount = lessons.length;
                 const tutorName = course.tutorName || 'Maituta Academy';
+                const flyerHtml = course.flyerUrl ?
+                    `<img src="${course.flyerUrl}" class="course-flyer" alt="Course Flyer" loading="lazy" />` :
+                    '';
 
                 const enrolledHtml = isEnrolled ?
                     `
@@ -3782,6 +4113,7 @@
 
                 container.innerHTML = `
                     <div class="course-hero">
+                        ${flyerHtml}
                         <h1>${course.title || 'Course'}</h1>
                         <div style="font-size:0.85rem;color:#64748B;">by <span class="tutor-name">${tutorName}</span></div>
                         <div class="course-meta">
@@ -3814,7 +4146,7 @@
         }
 
         // ================================================================
-        // TUTORS
+        // TUTORS (unchanged)
         // ================================================================
         async function loadAllTutors() {
             try {
@@ -3868,7 +4200,6 @@
                     `https://wa.me/234${t.whatsapp.replace(/^0+/, '')}?text=Hello%20${encodeURIComponent(t.name || 'Tutor')}` :
                     '#';
 
-                // Get courses taught by this tutor
                 const coursesSnap = await db.collection('courses').where('tutorId', '==', tutorId).get();
                 let coursesHtml = '';
                 if (!coursesSnap.empty) {
@@ -3906,15 +4237,17 @@
         }
 
         // ================================================================
-        // DASHBOARD
+        // DASHBOARD (Member) - updated with settings
         // ================================================================
         function switchDashTab(tab) {
-            ['overview', 'mycourse', 'certificates', 'notifications', 'tutor', 'change-course'].forEach(t => {
+            const tabs = ['overview', 'mycourse', 'certificates', 'notifications', 'tutor', 'change-course', 'settings'];
+            tabs.forEach(t => {
                 const el = document.getElementById('dash-subtab-' + t);
                 if (el) el.style.display = t === tab ? 'block' : 'none';
             });
             document.querySelectorAll('#dash-sidebar .dash-nav-item').forEach(el => el.classList.remove('active'));
-            const map = { overview: 0, mycourse: 1, certificates: 2, notifications: 3, tutor: 4, 'change-course': 5 };
+            const map = { overview: 0, mycourse: 1, certificates: 2, notifications: 3, tutor: 4, 'change-course': 5,
+                settings: 6 };
             const btns = document.querySelectorAll('#dash-sidebar .dash-nav-item');
             if (map[tab] !== undefined && btns[map[tab]]) btns[map[tab]].classList.add('active');
             if (window.innerWidth <= 992) closeDashSidebar();
@@ -3961,7 +4294,7 @@
         }
 
         // ================================================================
-        // MY COURSE
+        // MY COURSE (unchanged)
         // ================================================================
         async function loadMyCourse() {
             const container = document.getElementById('my-course-container');
@@ -3993,11 +4326,9 @@
                 }
                 const course = courseDoc.data();
 
-                // Get lessons - without orderBy
                 const lessonsSnap = await db.collection('lessons').where('courseId', '==', cid).get();
                 state.courseLessons = [];
                 lessonsSnap.forEach(doc => { state.courseLessons.push({ ...doc.data(), docId: doc.id }); });
-                // Sort by order
                 state.courseLessons.sort((a, b) => (a.order || 0) - (b.order || 0));
 
                 const completed = memData.completedLessons || [];
@@ -4087,7 +4418,7 @@
         }
 
         // ================================================================
-        // VIEW LESSON
+        // VIEW LESSON (unchanged)
         // ================================================================
         function viewLesson(index) {
             const container = document.getElementById('my-course-container');
@@ -4180,7 +4511,7 @@
         }
 
         // ================================================================
-        // MARK LESSON COMPLETE
+        // MARK LESSON COMPLETE (unchanged)
         // ================================================================
         async function markLessonComplete(index) {
             if (!state.member) { showToast('Please login.'); return; }
@@ -4214,7 +4545,7 @@
         }
 
         // ================================================================
-        // AI EXPLANATION - Updated with new model
+        // AI EXPLANATION (updated with aiConfig)
         // ================================================================
         async function askAIForExplanation(lessonId) {
             const box = document.getElementById('ai-explanation-box');
@@ -4231,21 +4562,21 @@
                 const prompt =
                     `Explain the following lesson in simple, easy-to-understand terms for a learner. Lesson Title: ${lesson.title || 'Lesson'}. Content: ${lesson.textContent || 'No text content'}. Provide a clear, helpful explanation with examples if possible.`;
 
-                const response = await fetch(GROQ_API_URL, {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
                     method: 'POST',
                     headers: {
-                        'Authorization': 'Bearer ' + GROQ_API_KEY,
+                        'Authorization': 'Bearer ' + aiConfig.apiKey,
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        model: GROQ_MODEL,
+                        model: aiConfig.model,
                         messages: [
                             { role: 'system',
                                 content: 'You are Maituta Academy AI Tutor. Explain concepts clearly and professionally.' },
                             { role: 'user', content: prompt }
                         ],
-                        temperature: 0.7,
-                        max_tokens: 600
+                        temperature: aiConfig.temperature,
+                        max_tokens: aiConfig.maxTokens
                     })
                 });
 
@@ -4265,7 +4596,7 @@
         }
 
         // ================================================================
-        // INTRO VIDEO
+        // INTRO VIDEO (unchanged)
         // ================================================================
         function playIntroVideo(videoUrl) {
             if (!videoUrl) { showToast('No intro video available.'); return; }
@@ -4290,7 +4621,7 @@
         }
 
         // ================================================================
-        // QUIZ - Updated with new model
+        // QUIZ (updated with aiConfig)
         // ================================================================
         async function startQuiz() {
             if (!state.member) { showToast('Please login.'); return; }
@@ -4299,6 +4630,25 @@
                 return;
             }
 
+            // Check if manual quiz exists for this course
+            const quizSnap = await db.collection('quizzes').where('courseId', '==', state.member.courseId).get();
+            if (!quizSnap.empty) {
+                // Use manual quiz
+                const quizData = quizSnap.docs[0].data();
+                const questions = quizData.questions || [];
+                if (questions.length > 0) {
+                    state.quizState = {
+                        questions: questions,
+                        currentIndex: 0,
+                        answers: [],
+                        submitted: false
+                    };
+                    renderQuizQuestion();
+                    return;
+                }
+            }
+
+            // Fallback to AI-generated quiz
             const container = document.getElementById('my-course-container');
             const lessonView = document.getElementById('lesson-view-container');
             lessonView.style.display = 'none';
@@ -4316,20 +4666,20 @@
             `;
 
             try {
-                const response = await fetch(GROQ_API_URL, {
+                const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
                     method: 'POST',
                     headers: {
-                        'Authorization': 'Bearer ' + GROQ_API_KEY,
+                        'Authorization': 'Bearer ' + aiConfig.apiKey,
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        model: GROQ_MODEL,
+                        model: aiConfig.model,
                         messages: [
                             { role: 'system',
                                 content: 'You are a quiz generator. Generate exactly 20 multiple-choice questions.' },
                             { role: 'user', content: prompt }
                         ],
-                        temperature: 0.6,
+                        temperature: aiConfig.temperature,
                         max_tokens: 1800
                     })
                 });
@@ -4529,7 +4879,7 @@
         }
 
         // ================================================================
-        // CERTIFICATES - Premium Redesign
+        // CERTIFICATES (unchanged)
         // ================================================================
         async function loadCertificates() {
             const container = document.getElementById('certificates-container');
@@ -4769,7 +5119,7 @@
         }
 
         // ================================================================
-        // NOTIFICATIONS
+        // NOTIFICATIONS (unchanged)
         // ================================================================
         async function loadNotifications() {
             const container = document.getElementById('notifications-container');
@@ -4804,7 +5154,7 @@
         }
 
         // ================================================================
-        // TUTOR BIO (Dashboard)
+        // TUTOR BIO (Dashboard) (unchanged)
         // ================================================================
         async function loadTutorBio() {
             const container = document.getElementById('tutor-bio-container');
@@ -4881,7 +5231,7 @@
         }
 
         // ================================================================
-        // CHANGE COURSE
+        // CHANGE COURSE (unchanged)
         // ================================================================
         async function loadChangeCourseTab() {
             const select = document.getElementById('change-course-select');
@@ -4910,7 +5260,6 @@
                 const reqSnap = await db.collection('courseChangeRequests')
                     .where('memberId', '==', state.member.docId)
                     .get();
-                // Sort in memory instead of using orderBy
                 const requests = [];
                 reqSnap.forEach(doc => { requests.push({ ...doc.data(), docId: doc.id }); });
                 requests.sort((a, b) => {
@@ -4980,7 +5329,64 @@
         }
 
         // ================================================================
-        // ADMIN FUNCTIONS
+        // MEMBER SETTINGS: Change Password & Delete Account
+        // ================================================================
+        async function changeMemberPassword() {
+            const current = document.getElementById('member-current-password').value.trim();
+            const newPass = document.getElementById('member-new-password').value.trim();
+            const confirm = document.getElementById('member-confirm-password').value.trim();
+
+            if (!current || !newPass || !confirm) {
+                showToast('Please fill all fields.');
+                return;
+            }
+            if (current !== 'Maituta') {
+                showToast('Current password is incorrect.');
+                return;
+            }
+            if (newPass.length < 4) {
+                showToast('New password must be at least 4 characters.');
+                return;
+            }
+            if (newPass !== confirm) {
+                showToast('Passwords do not match.');
+                return;
+            }
+
+            try {
+                await db.collection('members').doc(state.member.docId).update({
+                    password: newPass
+                });
+                showToast('Password updated successfully!');
+                document.getElementById('member-current-password').value = '';
+                document.getElementById('member-new-password').value = '';
+                document.getElementById('member-confirm-password').value = '';
+            } catch (err) {
+                showToast('Error: ' + err.message);
+            }
+        }
+
+        async function deleteMemberAccount() {
+            if (!confirm('Are you sure you want to permanently delete your account? This action cannot be undone!')) {
+                return;
+            }
+            if (!confirm('Type DELETE to confirm.')) return;
+            try {
+                // Delete member doc
+                await db.collection('members').doc(state.member.docId).delete();
+                // Also delete related data? For simplicity, we delete the member doc.
+                showToast('Account deleted permanently.');
+                state.member = null;
+                updateHeaderUI();
+                navigate('home');
+                closeDashSidebar();
+            } catch (err) {
+                showToast('Error: ' + err.message);
+            }
+        }
+
+        // ================================================================
+        // ADMIN FUNCTIONS (updated with flyer and manual quiz)
         // ================================================================
         async function loadAdminData() {
             if (!state.adminAuth) return;
@@ -4995,6 +5401,8 @@
             await loadAdminQuizCourses();
             await updateAdminOverview();
             await loadTransferCourses();
+            await loadAISettingsUI();
+            await loadManualQuizList();
         }
 
         async function updateAdminOverview() {
@@ -5088,7 +5496,7 @@
         }
 
         // ================================================================
-        // ADMIN COURSES
+        // ADMIN COURSES (with flyer)
         // ================================================================
         async function loadAdminCourses() {
             try {
@@ -5106,6 +5514,7 @@
                         <div style="background:var(--white);padding:0.6rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;">
                             <div style="font-weight:800;color:var(--dark-navy);font-size:0.8rem;">${c.title || 'Untitled'}</div>
                             <div style="font-size:0.65rem;color:#94A3B8;">${c.tutorName || 'No tutor'}</div>
+                            ${c.flyerUrl ? `<img src="${c.flyerUrl}" style="height:60px;object-fit:cover;border-radius:4px;margin-top:0.2rem;" alt="Flyer" />` : ''}
                             <div style="margin-top:0.2rem;display:flex;gap:0.15rem;flex-wrap:wrap;">
                                 <button class="admin-action-btn edit" onclick="editCourse('${doc.id}')"><i class="fas fa-edit"></i></button>
                                 <button class="admin-action-btn delete" onclick="deleteCourse('${doc.id}')"><i class="fas fa-trash"></i></button>
@@ -5140,6 +5549,7 @@
             const desc = document.getElementById('add-course-desc').value.trim();
             const tutorId = document.getElementById('add-course-tutor').value;
             const video = document.getElementById('add-course-video').value.trim();
+            const flyer = document.getElementById('add-course-flyer').value.trim();
             const icon = document.getElementById('add-course-icon').value.trim() || 'fas fa-graduation-cap';
 
             if (!title) { showToast('Course title is required.'); return; }
@@ -5157,6 +5567,7 @@
                     tutorId,
                     tutorName,
                     videoUrl: video,
+                    flyerUrl: flyer,
                     icon,
                     createdAt: firebase.firestore.FieldValue.serverTimestamp()
                 });
@@ -5177,8 +5588,11 @@
             if (newTitle === null) return;
             const newDesc = prompt('Description:', c.description || '');
             if (newDesc === null) return;
+            const newFlyer = prompt('Flyer URL:', c.flyerUrl || '');
+            if (newFlyer === null) return;
             try {
-                await db.collection('courses').doc(courseId).update({ title: newTitle, description: newDesc });
+                await db.collection('courses').doc(courseId).update({ title: newTitle, description: newDesc,
+                    flyerUrl: newFlyer });
                 showToast('Course updated.');
                 loadAdminCourses();
                 loadAllCourses();
@@ -5203,7 +5617,7 @@
         }
 
         // ================================================================
-        // ADMIN LESSONS
+        // ADMIN LESSONS (unchanged)
         // ================================================================
         async function loadAdminLessons() {
             try {
@@ -5315,7 +5729,7 @@
         }
 
         // ================================================================
-        // ADMIN APPLICATIONS
+        // ADMIN APPLICATIONS (unchanged)
         // ================================================================
         async function loadAdminApplications() {
             try {
@@ -5398,7 +5812,7 @@
         }
 
         // ================================================================
-        // ADMIN TUTORS
+        // ADMIN TUTORS (updated with phone & password)
         // ================================================================
         async function loadAdminTutors() {
             try {
@@ -5414,7 +5828,7 @@
                     html += `
                         <div style="background:var(--white);padding:0.6rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;">
                             <div style="font-weight:800;color:var(--dark-navy);font-size:0.8rem;">${t.name || 'Tutor'}</div>
-                            <div style="font-size:0.65rem;color:#94A3B8;">${t.whatsapp || 'No WhatsApp'}</div>
+                            <div style="font-size:0.65rem;color:#94A3B8;">${t.phone || 'No phone'}</div>
                             <div style="margin-top:0.2rem;display:flex;gap:0.15rem;flex-wrap:wrap;">
                                 <button class="admin-action-btn edit" onclick="editTutor('${doc.id}')"><i class="fas fa-edit"></i></button>
                                 <button class="admin-action-btn delete" onclick="deleteTutor('${doc.id}')"><i class="fas fa-trash"></i></button>
@@ -5438,9 +5852,14 @@
             const bio = document.getElementById('add-tutor-bio').value.trim();
             const photo = document.getElementById('add-tutor-photo').value.trim();
             const signature = document.getElementById('add-tutor-signature').value.trim();
+            const phone = document.getElementById('add-tutor-phone').value.trim();
+            const password = document.getElementById('add-tutor-password').value.trim();
             const whatsapp = document.getElementById('add-tutor-whatsapp').value.trim();
 
-            if (!name || !bio || !whatsapp) { showToast('Name, bio, and WhatsApp are required.'); return; }
+            if (!name || !bio || !phone || !password) {
+                showToast('Name, bio, phone, and password are required.');
+                return;
+            }
 
             try {
                 await db.collection('tutors').add({
@@ -5448,6 +5867,8 @@
                     bio,
                     photo,
                     signature,
+                    phone,
+                    password,
                     whatsapp,
                     createdAt: firebase.firestore.FieldValue.serverTimestamp()
                 });
@@ -5466,13 +5887,13 @@
             if (newName === null) return;
             const newBio = prompt('Bio:', t.bio || '');
             if (newBio === null) return;
-            const newWhatsapp = prompt('WhatsApp:', t.whatsapp || '');
-            if (newWhatsapp === null) return;
+            const newPhone = prompt('Phone:', t.phone || '');
+            if (newPhone === null) return;
             try {
                 await db.collection('tutors').doc(tutorId).update({
                     name: newName,
                     bio: newBio,
-                    whatsapp: newWhatsapp
+                    phone: newPhone
                 });
                 showToast('Tutor updated.');
                 loadAdminTutors();
@@ -5491,7 +5912,7 @@
         }
 
         // ================================================================
-        // ADMIN NOTIFICATIONS
+        // ADMIN NOTIFICATIONS (unchanged)
         // ================================================================
         async function sendAdminNotification() {
             const title = document.getElementById('admin-notif-title').value.trim();
@@ -5534,7 +5955,7 @@
         }
 
         // ================================================================
-        // ADMIN CERTIFICATES
+        // ADMIN CERTIFICATES (unchanged)
         // ================================================================
         async function loadAdminCertificates() {
             try {
@@ -5612,7 +6033,7 @@
         }
 
         // ================================================================
-        // ADMIN COURSE CHANGES - Fixed index issue
+        // ADMIN COURSE CHANGES (unchanged)
         // ================================================================
         async function loadAdminCourseChanges() {
             try {
@@ -5622,7 +6043,6 @@
 
                 const requests = [];
                 snap.forEach(doc => requests.push({ ...doc.data(), docId: doc.id }));
-                // Sort in memory
                 requests.sort((a, b) => {
                     if (a.requestedAt && b.requestedAt) return b.requestedAt.seconds - a.requestedAt.seconds;
                     return 0;
@@ -5695,100 +6115,144 @@
         }
 
         // ================================================================
-        // ADMIN GENERATE QUIZ
+        // ADMIN MANUAL QUIZ
         // ================================================================
-        async function loadAdminQuizCourses() {
-            try {
-                const snap = await db.collection('courses').get();
-                const select = document.getElementById('admin-quiz-course');
-                select.innerHTML = '<option value="">Select a course</option>';
-                snap.forEach(doc => {
-                    const c = doc.data();
-                    const opt = document.createElement('option');
-                    opt.value = doc.id;
-                    opt.textContent = c.title || doc.id;
-                    select.appendChild(opt);
-                });
-            } catch (e) {}
+        function addManualQuestionBlock() {
+            const container = document.getElementById('manual-questions-container');
+            const block = document.createElement('div');
+            block.className = 'question-block';
+            block.style.border = '1px solid #E2E8F0';
+            block.style.padding = '0.6rem';
+            block.style.borderRadius = 'var(--radius-sm)';
+            block.style.marginBottom = '0.6rem';
+            block.innerHTML = `
+                <div class="form-group">
+                    <label>Question</label>
+                    <input type="text" class="manual-q-text" placeholder="Enter question" />
+                </div>
+                <div class="form-group">
+                    <label>Options (A, B, C, D)</label>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.3rem;">
+                        <input type="text" class="manual-q-opt" placeholder="A" />
+                        <input type="text" class="manual-q-opt" placeholder="B" />
+                        <input type="text" class="manual-q-opt" placeholder="C" />
+                        <input type="text" class="manual-q-opt" placeholder="D" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Correct Answer (A-D)</label>
+                    <select class="manual-q-answer"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select>
+                </div>
+                <button class="btn-danger btn-sm" onclick="this.closest('.question-block').remove()"><i class="fas fa-trash"></i> Remove</button>
+            `;
+            container.appendChild(block);
         }
 
-        async function generateAdminQuiz() {
-            const courseId = document.getElementById('admin-quiz-course').value;
-            const count = parseInt(document.getElementById('admin-quiz-count').value) || 20;
-            if (!courseId) { showToast('Please select a course.'); return; }
+        async function saveManualQuiz() {
+            const courseId = document.getElementById('manual-quiz-course').value;
+            const title = document.getElementById('manual-quiz-title').value.trim();
+            if (!courseId || !title) { showToast('Please select a course and enter a title.'); return; }
 
-            const resultDiv = document.getElementById('admin-quiz-result');
-            resultDiv.style.display = 'block';
-            const contentDiv = resultDiv.querySelector('div');
-            contentDiv.textContent = 'Generating quiz questions...';
+            const questionBlocks = document.querySelectorAll('#manual-questions-container .question-block');
+            const questions = [];
+            let valid = true;
+            questionBlocks.forEach(block => {
+                const qText = block.querySelector('.manual-q-text').value.trim();
+                const opts = block.querySelectorAll('.manual-q-opt');
+                const options = {};
+                const keys = ['A', 'B', 'C', 'D'];
+                opts.forEach((opt, idx) => {
+                    const val = opt.value.trim();
+                    if (!val) { valid = false; }
+                    options[keys[idx]] = val;
+                });
+                const answer = block.querySelector('.manual-q-answer').value;
+                if (!qText || Object.values(options).some(v => !v)) { valid = false; }
+                questions.push({ question: qText, options, answer });
+            });
+
+            if (!valid || questions.length === 0) {
+                showToast('Please fill all fields for each question.');
+                return;
+            }
 
             try {
-                // Get course content from lessons
-                const lessonsSnap = await db.collection('lessons').where('courseId', '==', courseId).get();
-                const lessonTexts = [];
-                lessonsSnap.forEach(doc => { const l = doc.data(); if (l.textContent) lessonTexts.push(l.textContent); });
-                const allContent = lessonTexts.join('\n\n');
-
-                if (!allContent.trim()) {
-                    contentDiv.textContent = 'No lesson content found for this course. Add lessons with content first.';
-                    return;
+                // Check if quiz already exists for course
+                const existing = await db.collection('quizzes').where('courseId', '==', courseId).get();
+                if (!existing.empty) {
+                    // Update existing
+                    await db.collection('quizzes').doc(existing.docs[0].id).update({
+                        title,
+                        questions,
+                        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+                    });
+                    showToast('Quiz updated!');
+                } else {
+                    await db.collection('quizzes').add({
+                        courseId,
+                        title,
+                        questions,
+                        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                    });
+                    showToast('Quiz saved successfully!');
                 }
-
-                const prompt =
-                    `Generate ${count} multiple-choice quiz questions based on this course content. Each question must have 4 options (A, B, C, D) with one correct answer. Format: Q: question? A: option1 B: option2 C: option3 D: option4 Answer: A/B/C/D. Course content: ${allContent.substring(0, 3500)}`;
-
-                const response = await fetch(GROQ_API_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': 'Bearer ' + GROQ_API_KEY,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        model: GROQ_MODEL,
-                        messages: [
-                            { role: 'system',
-                                content: 'You are a quiz generator. Generate exactly ' + count + ' multiple-choice questions.' },
-                            { role: 'user', content: prompt }
-                        ],
-                        temperature: 0.6,
-                        max_tokens: 2000
-                    })
-                });
-
-                if (!response.ok) {
-                    const errorText = await response.text();
-                    throw new Error(`API error: ${response.status} - ${errorText}`);
-                }
-
-                const data = await response.json();
-                const rawText = data.choices[0].message.content;
-                contentDiv.textContent = rawText;
-                resultDiv.dataset.quizContent = rawText;
-                showToast(`✅ Generated ${count} quiz questions!`);
-
+                loadManualQuizList();
+                document.getElementById('manual-questions-container').innerHTML = `
+                    <div class="question-block" style="border:1px solid #E2E8F0;padding:0.6rem;border-radius:var(--radius-sm);margin-bottom:0.6rem;">
+                        <div class="form-group"><label>Question</label><input type="text" class="manual-q-text" placeholder="Enter question" /></div>
+                        <div class="form-group">
+                            <label>Options (A, B, C, D)</label>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.3rem;">
+                                <input type="text" class="manual-q-opt" placeholder="A" />
+                                <input type="text" class="manual-q-opt" placeholder="B" />
+                                <input type="text" class="manual-q-opt" placeholder="C" />
+                                <input type="text" class="manual-q-opt" placeholder="D" />
+                            </div>
+                        </div>
+                        <div class="form-group"><label>Correct Answer (A-D)</label><select class="manual-q-answer"><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option></select></div>
+                        <button class="btn-danger btn-sm" onclick="this.closest('.question-block').remove()"><i class="fas fa-trash"></i> Remove</button>
+                    </div>
+                `;
+                document.getElementById('manual-quiz-title').value = '';
             } catch (err) {
-                contentDiv.textContent = 'Error generating quiz: ' + err.message;
-                showToast('Error: ' + err.message);
-                console.error('Admin quiz generation error:', err);
+                showToast('Error saving quiz: ' + err.message);
             }
         }
 
-        function copyQuizToClipboard() {
-            const content = document.querySelector('#admin-quiz-result div');
-            if (!content) return;
-            navigator.clipboard.writeText(content.textContent).then(() => showToast('Quiz copied to clipboard!'))
-                .catch(() => {
-                    const range = document.createRange();
-                    range.selectNode(content);
-                    window.getSelection().removeAllRanges();
-                    window.getSelection().addRange(range);
-                    document.execCommand('copy');
-                    showToast('Quiz copied!');
+        async function loadManualQuizList() {
+            try {
+                const snap = await db.collection('quizzes').get();
+                const container = document.getElementById('admin-quiz-list');
+                if (snap.empty) {
+                    container.innerHTML = '<div style="color:#94A3B8;font-size:0.75rem;">No quizzes created.</div>';
+                    return;
+                }
+                let html = '';
+                snap.forEach(doc => {
+                    const q = doc.data();
+                    html += `
+                        <div style="border-bottom:1px solid #E2E8F0;padding:0.3rem 0;">
+                            <div style="font-weight:700;font-size:0.8rem;">${q.title || 'Untitled Quiz'}</div>
+                            <div style="font-size:0.7rem;color:#94A3B8;">Course: ${q.courseId} • ${q.questions ? q.questions.length : 0} questions</div>
+                            <button class="admin-action-btn delete" onclick="deleteQuiz('${doc.id}')"><i class="fas fa-trash"></i> Delete</button>
+                        </div>
+                    `;
                 });
+                container.innerHTML = html;
+            } catch (err) {}
+        }
+
+        async function deleteQuiz(quizId) {
+            if (!confirm('Delete this quiz?')) return;
+            try {
+                await db.collection('quizzes').doc(quizId).delete();
+                showToast('Quiz deleted.');
+                loadManualQuizList();
+            } catch (err) { showToast('Error: ' + err.message); }
         }
 
         // ================================================================
-        // ADMIN SETTINGS
+        // ADMIN SETTINGS (unchanged)
         // ================================================================
         async function toggleRegistration() {
             state.registrationOpen = !state.registrationOpen;
@@ -5865,11 +6329,11 @@
         }
 
         // ================================================================
-        // ADMIN TAB SWITCHING
+        // ADMIN TAB SWITCHING (updated with ai-settings)
         // ================================================================
         function switchAdminTab(tab) {
             const tabs = ['overview', 'members', 'courses', 'lessons', 'applications', 'tutors', 'notifications',
-                'certificates', 'course-changes', 'quiz', 'settings'
+                'certificates', 'course-changes', 'quiz', 'ai-settings', 'settings'
             ];
             tabs.forEach(t => {
                 const el = document.getElementById('adm-subtab-' + t);
@@ -5877,7 +6341,7 @@
             });
             document.querySelectorAll('#admin-dash-sidebar .dash-nav-item').forEach(el => el.classList.remove('active'));
             const map = { overview: 0, members: 1, courses: 2, lessons: 3, applications: 4, tutors: 5, notifications: 6,
-                certificates: 7, 'course-changes': 8, quiz: 9, settings: 10 };
+                certificates: 7, 'course-changes': 8, quiz: 9, 'ai-settings': 10, settings: 11 };
             const btns = document.querySelectorAll('#admin-dash-sidebar .dash-nav-item');
             if (map[tab] !== undefined && btns[map[tab]]) btns[map[tab]].classList.add('active');
             if (window.innerWidth <= 992) closeAdminDashSidebar();
@@ -5890,16 +6354,584 @@
             if (tab === 'notifications') loadAdminNotifications();
             if (tab === 'certificates') loadAdminCertificates();
             if (tab === 'course-changes') loadAdminCourseChanges();
-            if (tab === 'quiz') loadAdminQuizCourses();
+            if (tab === 'quiz') { loadManualQuizList();
+                loadAdminQuizCourses(); }
+            if (tab === 'ai-settings') loadAISettingsUI();
             if (tab === 'settings') { loadTransferCourses();
                 updateRegUI(); }
             if (tab === 'overview') updateAdminOverview();
         }
 
+        async function loadAdminQuizCourses() {
+            try {
+                const snap = await db.collection('courses').get();
+                const select = document.getElementById('manual-quiz-course');
+                select.innerHTML = '<option value="">Select Course</option>';
+                snap.forEach(doc => {
+                    const c = doc.data();
+                    const opt = document.createElement('option');
+                    opt.value = doc.id;
+                    opt.textContent = c.title || doc.id;
+                    select.appendChild(opt);
+                });
+            } catch (e) {}
+        }
+
+        // ================================================================
+        // TUTOR DASHBOARD
+        // ================================================================
+        function switchTutorTab(tab) {
+            const tabs = ['overview', 'courses', 'assignments', 'submissions', 'members', 'chat', 'notifications', 'settings'];
+            tabs.forEach(t => {
+                const el = document.getElementById('tutor-subtab-' + t);
+                if (el) el.style.display = t === tab ? 'block' : 'none';
+            });
+            document.querySelectorAll('#tutor-dash-sidebar .dash-nav-item').forEach(el => el.classList.remove('active'));
+            const map = { overview: 0, courses: 1, assignments: 2, submissions: 3, members: 4, chat: 5, notifications: 6,
+                settings: 7 };
+            const btns = document.querySelectorAll('#tutor-dash-sidebar .dash-nav-item');
+            if (map[tab] !== undefined && btns[map[tab]]) btns[map[tab]].classList.add('active');
+            if (window.innerWidth <= 992) closeTutorDashSidebar();
+
+            if (tab === 'overview') loadTutorDashboardData();
+            if (tab === 'courses') loadTutorCourses();
+            if (tab === 'assignments') loadTutorAssignments();
+            if (tab === 'submissions') loadTutorSubmissions();
+            if (tab === 'members') loadTutorMembers();
+            if (tab === 'chat') loadTutorChat();
+            if (tab === 'notifications') loadTutorNotificationForm();
+        }
+
+        async function loadTutorDashboardData() {
+            if (!state.tutor) return;
+            const tutorId = state.tutor.docId;
+            try {
+                const coursesSnap = await db.collection('courses').where('tutorId', '==', tutorId).get();
+                const courses = coursesSnap.docs.map(d => d.data());
+                document.getElementById('tutor-course-count').textContent = courses.length;
+
+                // Count students (members) enrolled in tutor's courses
+                let studentCount = 0;
+                for (const c of courses) {
+                    const membersSnap = await db.collection('members').where('courseId', '==', c.courseId || '').get();
+                    studentCount += membersSnap.size;
+                }
+                document.getElementById('tutor-student-count').textContent = studentCount;
+
+                // Count assignments
+                const assignSnap = await db.collection('assignments').where('tutorId', '==', tutorId).get();
+                document.getElementById('tutor-assignment-count').textContent = assignSnap.size;
+            } catch (e) {}
+        }
+
+        async function loadTutorCourses() {
+            const container = document.getElementById('tutor-courses-container');
+            if (!state.tutor) { container.innerHTML = '<div style="color:#94A3B8;">Please login.</div>'; return; }
+            const tutorId = state.tutor.docId;
+            try {
+                const snap = await db.collection('courses').where('tutorId', '==', tutorId).get();
+                if (snap.empty) {
+                    container.innerHTML = '<div style="color:#94A3B8;">You have no courses assigned.</div>';
+                    return;
+                }
+                let html = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.6rem;">';
+                snap.forEach(doc => {
+                    const c = doc.data();
+                    html += `
+                        <div style="background:var(--white);padding:0.8rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;">
+                            <div style="font-weight:800;color:var(--dark-navy);">${c.title || 'Course'}</div>
+                            <div style="font-size:0.7rem;color:#94A3B8;">${c.tutorName || 'Tutor'}</div>
+                            ${c.flyerUrl ? `<img src="${c.flyerUrl}" style="height:80px;object-fit:cover;border-radius:4px;margin-top:0.2rem;" />` : ''}
+                            <div style="margin-top:0.3rem;display:flex;gap:0.2rem;flex-wrap:wrap;">
+                                <button class="btn-primary btn-xs" onclick="tutorEditCourse('${doc.id}')"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="btn-primary btn-xs" onclick="tutorAddLesson('${doc.id}')"><i class="fas fa-plus"></i> Lesson</button>
+                                <button class="btn-danger btn-xs" onclick="tutorDeleteCourse('${doc.id}')"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+                container.innerHTML = html;
+            } catch (e) {}
+        }
+
+        async function tutorEditCourse(courseId) {
+            const doc = await db.collection('courses').doc(courseId).get();
+            if (!doc.exists) { showToast('Course not found.'); return; }
+            const c = doc.data();
+            const newTitle = prompt('Title:', c.title || '');
+            if (newTitle === null) return;
+            const newDesc = prompt('Description:', c.description || '');
+            if (newDesc === null) return;
+            const newFlyer = prompt('Flyer URL:', c.flyerUrl || '');
+            if (newFlyer === null) return;
+            try {
+                await db.collection('courses').doc(courseId).update({ title: newTitle, description: newDesc,
+                    flyerUrl: newFlyer });
+                showToast('Course updated.');
+                loadTutorCourses();
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        function tutorAddLesson(courseId) {
+            // Reuse admin add lesson modal, but pre-select course
+            db.collection('courses').get().then(snap => {
+                const select = document.getElementById('add-lesson-course');
+                select.innerHTML = '<option value="">Select Course</option>';
+                snap.forEach(doc => {
+                    const c = doc.data();
+                    const opt = document.createElement('option');
+                    opt.value = doc.id;
+                    opt.textContent = c.title || doc.id;
+                    if (doc.id === courseId) opt.selected = true;
+                    select.appendChild(opt);
+                });
+            });
+            document.getElementById('add-lesson-form').reset();
+            toggleLessonTypeFields();
+            openModal('modal-add-lesson');
+            // Override submit handler to use tutor context
+            document.getElementById('add-lesson-form').onsubmit = async function(e) {
+                e.preventDefault();
+                await handleAddLesson(e);
+                loadTutorCourses();
+            };
+        }
+
+        async function tutorDeleteCourse(courseId) {
+            if (!confirm('Delete this course and all its lessons?')) return;
+            try {
+                const lessons = await db.collection('lessons').where('courseId', '==', courseId).get();
+                const batch = db.batch();
+                lessons.forEach(d => batch.delete(d.ref));
+                await batch.commit();
+                await db.collection('courses').doc(courseId).delete();
+                showToast('Course deleted.');
+                loadTutorCourses();
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        // ================================================================
+        // TUTOR ASSIGNMENTS
+        // ================================================================
+        async function loadTutorAssignments() {
+            if (!state.tutor) return;
+            const tutorId = state.tutor.docId;
+            // Load courses for dropdown
+            const coursesSnap = await db.collection('courses').where('tutorId', '==', tutorId).get();
+            const select = document.getElementById('tutor-assignment-course');
+            select.innerHTML = '<option value="">Select Course</option>';
+            coursesSnap.forEach(doc => {
+                const c = doc.data();
+                const opt = document.createElement('option');
+                opt.value = doc.id;
+                opt.textContent = c.title || doc.id;
+                select.appendChild(opt);
+            });
+
+            // Load assignments
+            const assignSnap = await db.collection('assignments').where('tutorId', '==', tutorId).get();
+            const container = document.getElementById('tutor-assignment-list');
+            if (assignSnap.empty) {
+                container.innerHTML = '<div style="color:#94A3B8;font-size:0.75rem;">No assignments created.</div>';
+                return;
+            }
+            let html = '';
+            assignSnap.forEach(doc => {
+                const a = doc.data();
+                html += `
+                    <div style="border-bottom:1px solid #E2E8F0;padding:0.3rem 0;">
+                        <div style="font-weight:700;">${a.title || 'Assignment'}</div>
+                        <div style="font-size:0.7rem;color:#64748B;">Course: ${a.courseId} • Due: ${a.dueDate ? new Date(a.dueDate).toLocaleString() : 'No due'}</div>
+                        <button class="admin-action-btn delete" onclick="deleteAssignment('${doc.id}')"><i class="fas fa-trash"></i> Delete</button>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        async function createAssignment() {
+            const courseId = document.getElementById('tutor-assignment-course').value;
+            const title = document.getElementById('tutor-assignment-title').value.trim();
+            const desc = document.getElementById('tutor-assignment-desc').value.trim();
+            const dueDate = document.getElementById('tutor-assignment-due').value;
+
+            if (!courseId || !title) { showToast('Course and title are required.'); return; }
+
+            try {
+                await db.collection('assignments').add({
+                    courseId,
+                    tutorId: state.tutor.docId,
+                    title,
+                    description: desc,
+                    dueDate: dueDate ? new Date(dueDate) : null,
+                    createdAt: firebase.firestore.FieldValue.serverTimestamp()
+                });
+                showToast('Assignment created!');
+                document.getElementById('tutor-assignment-title').value = '';
+                document.getElementById('tutor-assignment-desc').value = '';
+                loadTutorAssignments();
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        async function deleteAssignment(assignId) {
+            if (!confirm('Delete this assignment?')) return;
+            try {
+                await db.collection('assignments').doc(assignId).delete();
+                showToast('Assignment deleted.');
+                loadTutorAssignments();
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        // ================================================================
+        // TUTOR SUBMISSIONS
+        // ================================================================
+        async function loadTutorSubmissions() {
+            const container = document.getElementById('tutor-submissions-container');
+            if (!state.tutor) { container.innerHTML = '<div style="color:#94A3B8;">Please login.</div>'; return; }
+            const tutorId = state.tutor.docId;
+            try {
+                const submissionsSnap = await db.collection('submissions')
+                    .where('tutorId', '==', tutorId)
+                    .get();
+                if (submissionsSnap.empty) {
+                    container.innerHTML = '<div style="color:#94A3B8;">No submissions yet.</div>';
+                    return;
+                }
+                let html = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0.6rem;">';
+                for (const doc of submissionsSnap.docs) {
+                    const s = doc.data();
+                    const memberSnap = await db.collection('members').doc(s.memberId).get();
+                    const memberName = memberSnap.exists ? memberSnap.data().name : 'Unknown';
+                    html += `
+                        <div style="background:var(--white);padding:0.8rem;border-radius:var(--radius-md);border:1px solid #E2E8F0;">
+                            <div style="font-weight:700;">${s.assignmentTitle || 'Submission'}</div>
+                            <div style="font-size:0.7rem;color:#64748B;">By: ${memberName}</div>
+                            <div style="font-size:0.7rem;color:#64748B;">Submitted: ${s.submittedAt ? new Date(s.submittedAt.seconds*1000).toLocaleString() : ''}</div>
+                            <div style="margin-top:0.2rem;">
+                                <span style="font-weight:600;">Content:</span> ${s.content || 'No content'}
+                            </div>
+                            ${s.grade !== undefined ? `<div style="font-weight:700;color:var(--gold);">Mark: ${s.grade}%</div>` : `
+                                <div style="margin-top:0.2rem;display:flex;gap:0.2rem;">
+                                    <input type="number" id="grade-${doc.id}" placeholder="Mark %" style="width:80px;padding:0.2rem;border:1px solid #E2E8F0;border-radius:4px;" />
+                                    <button class="btn-primary btn-xs" onclick="markSubmission('${doc.id}')"><i class="fas fa-check"></i> Mark</button>
+                                </div>
+                            `}
+                        </div>
+                    `;
+                }
+                html += '</div>';
+                container.innerHTML = html;
+            } catch (e) {}
+        }
+
+        async function markSubmission(submissionId) {
+            const gradeInput = document.getElementById('grade-' + submissionId);
+            const grade = parseInt(gradeInput.value);
+            if (isNaN(grade) || grade < 0 || grade > 100) { showToast('Enter a valid mark (0-100).'); return; }
+            try {
+                await db.collection('submissions').doc(submissionId).update({ grade });
+                showToast('Mark saved!');
+                loadTutorSubmissions();
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        // ================================================================
+        // TUTOR MEMBERS (with print)
+        // ================================================================
+        async function loadTutorMembers() {
+            const container = document.getElementById('tutor-members-container');
+            if (!state.tutor) { container.innerHTML = '<div style="color:#94A3B8;">Please login.</div>'; return; }
+            const tutorId = state.tutor.docId;
+            try {
+                const coursesSnap = await db.collection('courses').where('tutorId', '==', tutorId).get();
+                if (coursesSnap.empty) { container.innerHTML = '<div style="color:#94A3B8;">No courses assigned.</div>'; return; }
+
+                let allMembers = [];
+                for (const cDoc of coursesSnap.docs) {
+                    const courseId = cDoc.id;
+                    const membersSnap = await db.collection('members').where('courseId', '==', courseId).get();
+                    membersSnap.forEach(mDoc => {
+                        const m = mDoc.data();
+                        allMembers.push({ ...m, courseTitle: cDoc.data().title || 'Course' });
+                    });
+                }
+
+                if (allMembers.length === 0) {
+                    container.innerHTML = '<div style="color:#94A3B8;">No members enrolled in your courses.</div>';
+                    return;
+                }
+
+                let html = `
+                    <div style="background:var(--white);border-radius:var(--radius-md);padding:0.6rem;border:1px solid #E2E8F0;overflow-x:auto;">
+                        <table style="width:100%;border-collapse:collapse;font-size:0.75rem;">
+                            <thead><tr style="background:var(--dark-navy);color:white;">
+                                <th style="padding:0.3rem;">Name</th><th>Phone</th><th>Course</th><th>Status</th>
+                            </tr></thead>
+                            <tbody>
+                `;
+                allMembers.forEach(m => {
+                    html += `
+                        <tr style="border-bottom:1px solid #E2E8F0;">
+                            <td style="padding:0.2rem;">${m.name || '—'}</td>
+                            <td>${m.phone || '—'}</td>
+                            <td>${m.courseTitle || '—'}</td>
+                            <td>${m.restricted ? 'Restricted' : 'Active'}</td>
+                        </tr>
+                    `;
+                });
+                html += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+                container.innerHTML = html;
+                // Store data for print
+                window._memberListData = allMembers;
+            } catch (e) {}
+        }
+
+        function printMemberList() {
+            const data = window._memberListData;
+            if (!data || data.length === 0) { showToast('No members to print.'); return; }
+
+            const qrData = `MTA-TUTOR-${state.tutor.docId}-${Date.now()}`;
+            const html = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Member List - Maituta Academy</title>
+                    <style>
+                        @page { size: A4 landscape; margin: 1.5cm; }
+                        body { font-family: 'Inter', sans-serif; background: white; margin: 0; padding: 20px; }
+                        .report-container { max-width: 100%; }
+                        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #D4AF37; padding-bottom: 10px; }
+                        .header h1 { color: #0B5E2B; font-size: 1.4rem; margin: 0; }
+                        .header img { height: 40px; }
+                        .qr { width: 80px; height: 80px; }
+                        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+                        th { background: #082B73; color: white; padding: 8px; text-align: left; font-size: 0.8rem; }
+                        td { padding: 6px; border-bottom: 1px solid #E2E8F0; font-size: 0.75rem; }
+                        .footer { margin-top: 20px; font-size: 0.7rem; color: #94A3B8; text-align: center; border-top: 1px solid #E2E8F0; padding-top: 10px; }
+                        .watermark { position: fixed; bottom: 20px; right: 20px; opacity: 0.1; font-size: 2rem; font-weight: 900; color: #0B5E2B; }
+                    </style>
+                </head>
+                <body>
+                    <div class="report-container">
+                        <div class="header">
+                            <div>
+                                <h1>Maituta Academy - Enrolled Members</h1>
+                                <p style="margin:0;font-size:0.7rem;color:#64748B;">Tutor: ${state.tutor.name || 'Tutor'} • Generated: ${new Date().toLocaleString()}</p>
+                            </div>
+                            <div class="qr">
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(qrData)}" alt="QR" style="width:100%;height:100%;" />
+                            </div>
+                        </div>
+                        <table>
+                            <thead><tr><th>#</th><th>Name</th><th>Phone</th><th>Course</th><th>Status</th></tr></thead>
+                            <tbody>
+                                ${data.map((m, i) => `
+                                    <tr><td>${i+1}</td><td>${m.name || '—'}</td><td>${m.phone || '—'}</td><td>${m.courseTitle || '—'}</td><td>${m.restricted ? 'Restricted' : 'Active'}</td></tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                        <div class="footer">
+                            <span>Verified by Maituta Academy • ${data.length} members</span>
+                        </div>
+                    </div>
+                    <div class="watermark">MAITUTA</div>
+                    <script>
+                        window.print();
+                    <\/script>
+                </body>
+                </html>
+            `;
+            const win = window.open('', '_blank', 'width=1200,height=800');
+            if (win) {
+                win.document.write(html);
+                win.document.close();
+                win.focus();
+            } else {
+                showToast('Please allow popups for print.');
+            }
+        }
+
+        // ================================================================
+        // TUTOR CHAT (simple)
+        // ================================================================
+        let chatListener = null;
+
+        async function loadTutorChat() {
+            if (!state.tutor) return;
+            const tutorId = state.tutor.docId;
+            // Load members for dropdown
+            const coursesSnap = await db.collection('courses').where('tutorId', '==', tutorId).get();
+            const memberSelect = document.getElementById('tutor-chat-member');
+            memberSelect.innerHTML = '<option value="">Select Member</option>';
+            let memberMap = {};
+            for (const cDoc of coursesSnap.docs) {
+                const membersSnap = await db.collection('members').where('courseId', '==', cDoc.id).get();
+                membersSnap.forEach(mDoc => {
+                    const m = mDoc.data();
+                    const opt = document.createElement('option');
+                    opt.value = mDoc.id;
+                    opt.textContent = m.name + ' (' + m.phone + ')';
+                    memberSelect.appendChild(opt);
+                    memberMap[mDoc.id] = m;
+                });
+            }
+            if (memberSelect.options.length === 1) {
+                memberSelect.innerHTML = '<option value="">No members available</option>';
+            }
+
+            // Load chat when member selected
+            memberSelect.onchange = function() {
+                loadChatMessages(this.value);
+            };
+        }
+
+        async function loadChatMessages(memberId) {
+            const container = document.getElementById('tutor-chat-messages');
+            if (!memberId) { container.innerHTML = '<div style="color:#94A3B8;text-align:center;font-size:0.7rem;">Select a member to start chat</div>'; return; }
+            if (chatListener) chatListener();
+
+            const tutorId = state.tutor.docId;
+            const chatId = [tutorId, memberId].sort().join('_');
+            container.innerHTML = '<div style="color:#94A3B8;text-align:center;font-size:0.7rem;">Loading messages...</div>';
+
+            chatListener = db.collection('chats').doc(chatId).collection('messages')
+                .orderBy('timestamp', 'asc')
+                .onSnapshot(snapshot => {
+                    if (snapshot.empty) {
+                        container.innerHTML =
+                            '<div style="color:#94A3B8;text-align:center;font-size:0.7rem;">No messages yet. Send a message!</div>';
+                        return;
+                    }
+                    let html = '';
+                    snapshot.forEach(doc => {
+                        const m = doc.data();
+                        const isTutor = m.senderId === tutorId;
+                        html += `
+                            <div style="text-align:${isTutor ? 'right' : 'left'};margin:0.2rem 0;">
+                                <span style="display:inline-block;background:${isTutor ? 'var(--primary-green)' : '#E2E8F0'};color:${isTutor ? 'white' : 'var(--dark-text)'};padding:0.2rem 0.6rem;border-radius:8px;font-size:0.75rem;max-width:80%;word-wrap:break-word;">
+                                    ${m.text}
+                                </span>
+                                <div style="font-size:0.5rem;color:#94A3B8;margin-top:0.05rem;">${m.timestamp ? new Date(m.timestamp.seconds*1000).toLocaleTimeString() : ''}</div>
+                            </div>
+                        `;
+                    });
+                    container.innerHTML = html;
+                    container.scrollTop = container.scrollHeight;
+                });
+        }
+
+        async function sendTutorChat() {
+            const memberId = document.getElementById('tutor-chat-member').value;
+            const text = document.getElementById('tutor-chat-input').value.trim();
+            if (!memberId || !text) { showToast('Select a member and type a message.'); return; }
+            const tutorId = state.tutor.docId;
+            const chatId = [tutorId, memberId].sort().join('_');
+            try {
+                await db.collection('chats').doc(chatId).collection('messages').add({
+                    senderId: tutorId,
+                    senderName: state.tutor.name || 'Tutor',
+                    text: text,
+                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                });
+                document.getElementById('tutor-chat-input').value = '';
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        // ================================================================
+        // TUTOR NOTIFICATIONS
+        // ================================================================
+        async function loadTutorNotificationForm() {
+            if (!state.tutor) return;
+            const tutorId = state.tutor.docId;
+            const coursesSnap = await db.collection('courses').where('tutorId', '==', tutorId).get();
+            const select = document.getElementById('tutor-notif-course');
+            select.innerHTML = '<option value="">Select Course</option>';
+            coursesSnap.forEach(doc => {
+                const c = doc.data();
+                const opt = document.createElement('option');
+                opt.value = doc.id;
+                opt.textContent = c.title || doc.id;
+                select.appendChild(opt);
+            });
+        }
+
+        async function sendTutorNotification() {
+            const courseId = document.getElementById('tutor-notif-course').value;
+            const title = document.getElementById('tutor-notif-title').value.trim();
+            const body = document.getElementById('tutor-notif-body').value.trim();
+            if (!courseId || !title || !body) { showToast('Please fill all fields.'); return; }
+
+            try {
+                // Get members enrolled in this course
+                const membersSnap = await db.collection('members').where('courseId', '==', courseId).get();
+                if (membersSnap.empty) { showToast('No members enrolled in this course.'); return; }
+
+                const batch = db.batch();
+                membersSnap.forEach(doc => {
+                    const ref = db.collection('notifications').doc();
+                    batch.set(ref, {
+                        title,
+                        body,
+                        sentAt: firebase.firestore.FieldValue.serverTimestamp(),
+                        memberId: doc.id,
+                        courseId: courseId,
+                        tutorId: state.tutor.docId
+                    });
+                });
+                await batch.commit();
+                showToast('Notification sent to ' + membersSnap.size + ' members.');
+                document.getElementById('tutor-notif-title').value = '';
+                document.getElementById('tutor-notif-body').value = '';
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        // ================================================================
+        // TUTOR SETTINGS: Change Password & Delete Account
+        // ================================================================
+        async function changeTutorPassword() {
+            const current = document.getElementById('tutor-current-password').value.trim();
+            const newPass = document.getElementById('tutor-new-password').value.trim();
+            const confirm = document.getElementById('tutor-confirm-password').value.trim();
+
+            if (!current || !newPass || !confirm) { showToast('Please fill all fields.'); return; }
+            if (current !== state.tutor.password) { showToast('Current password is incorrect.'); return; }
+            if (newPass.length < 4) { showToast('New password must be at least 4 characters.'); return; }
+            if (newPass !== confirm) { showToast('Passwords do not match.'); return; }
+
+            try {
+                await db.collection('tutors').doc(state.tutor.docId).update({ password: newPass });
+                state.tutor.password = newPass;
+                showToast('Password updated!');
+                document.getElementById('tutor-current-password').value = '';
+                document.getElementById('tutor-new-password').value = '';
+                document.getElementById('tutor-confirm-password').value = '';
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
+        async function deleteTutorAccount() {
+            if (!confirm('Are you sure you want to permanently delete your tutor account? This action cannot be undone!'))
+                return;
+            if (!confirm('Type DELETE to confirm.')) return;
+            try {
+                await db.collection('tutors').doc(state.tutor.docId).delete();
+                showToast('Tutor account deleted.');
+                state.tutor = null;
+                updateHeaderUI();
+                navigate('home');
+                closeTutorDashSidebar();
+            } catch (err) { showToast('Error: ' + err.message); }
+        }
+
         // ================================================================
         // INIT
         // ================================================================
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadAIConfig();
             loadHomeStats();
             loadHomeCourses();
 
@@ -5920,7 +6952,7 @@
                 loadAdminData();
             }
 
-            showToast('Welcome to Maituta Academy! 🎓');
+            showToast('Welcome to Maituta Academy v2.0! 🎓');
 
             document.getElementById('add-lesson-type')?.addEventListener('change', toggleLessonTypeFields);
 
@@ -5937,14 +6969,18 @@
         window.setLoginRole = setLoginRole;
         window.handleLogin = handleLogin;
         window.logoutMember = logoutMember;
+        window.logoutTutor = logoutTutor;
         window.switchDashTab = switchDashTab;
         window.switchAdminTab = switchAdminTab;
+        window.switchTutorTab = switchTutorTab;
         window.openModal = openModal;
         window.closeModal = closeModal;
         window.toggleDashSidebar = toggleDashSidebar;
         window.closeDashSidebar = closeDashSidebar;
         window.toggleAdminDashSidebar = toggleAdminDashSidebar;
         window.closeAdminDashSidebar = closeAdminDashSidebar;
+        window.toggleTutorDashSidebar = toggleTutorDashSidebar;
+        window.closeTutorDashSidebar = closeTutorDashSidebar;
         window.showToast = showToast;
         window.viewLesson = viewLesson;
         window.closeLessonView = closeLessonView;
@@ -5969,9 +7005,10 @@
         window.viewCourseDetail = viewCourseDetail;
         window.requestCourseChange = requestCourseChange;
         window.getYouTubeEmbedUrl = getYouTubeEmbedUrl;
+        window.changeMemberPassword = changeMemberPassword;
+        window.deleteMemberAccount = deleteMemberAccount;
 
         window.handleAdminAuth = handleAdminAuth;
-        window.toggleAdminAuthMode = toggleAdminAuthMode;
         window.logoutAdmin = logoutAdmin;
         window.loadAdminData = loadAdminData;
         window.loadAdminMembers = loadAdminMembers;
@@ -6013,17 +7050,41 @@
         window.handleCourseChange = handleCourseChange;
         window.loadChangeCourseTab = loadChangeCourseTab;
         window.loadAdminQuizCourses = loadAdminQuizCourses;
-        window.generateAdminQuiz = generateAdminQuiz;
-        window.copyQuizToClipboard = copyQuizToClipboard;
+        window.addManualQuestionBlock = addManualQuestionBlock;
+        window.saveManualQuiz = saveManualQuiz;
+        window.loadManualQuizList = loadManualQuizList;
+        window.deleteQuiz = deleteQuiz;
+        window.saveAISettings = saveAISettings;
+        window.resetAISettings = resetAISettings;
+        window.loadAISettingsUI = loadAISettingsUI;
+
+        window.loadTutorDashboardData = loadTutorDashboardData;
+        window.loadTutorCourses = loadTutorCourses;
+        window.tutorEditCourse = tutorEditCourse;
+        window.tutorAddLesson = tutorAddLesson;
+        window.tutorDeleteCourse = tutorDeleteCourse;
+        window.loadTutorAssignments = loadTutorAssignments;
+        window.createAssignment = createAssignment;
+        window.deleteAssignment = deleteAssignment;
+        window.loadTutorSubmissions = loadTutorSubmissions;
+        window.markSubmission = markSubmission;
+        window.loadTutorMembers = loadTutorMembers;
+        window.printMemberList = printMemberList;
+        window.loadTutorChat = loadTutorChat;
+        window.sendTutorChat = sendTutorChat;
+        window.loadTutorNotificationForm = loadTutorNotificationForm;
+        window.sendTutorNotification = sendTutorNotification;
+        window.changeTutorPassword = changeTutorPassword;
+        window.deleteTutorAccount = deleteTutorAccount;
 
         window.toggleAIChat = toggleAIChat;
         window.sendAIMessage = sendAIMessage;
 
-        console.log('🚀 Maituta Academy initialized successfully.');
-        console.log('📚 Groq AI powered learning enabled (model: ' + GROQ_MODEL + ').');
+        console.log('🚀 Maituta Academy v2.0 initialized successfully.');
+        console.log('📚 AI powered learning with custom config support.');
         console.log('🔐 Firebase authentication ready.');
-        console.log('📝 Course change requests enabled.');
-        console.log('📝 Admin quiz generation enabled.');
+        console.log('👨‍🏫 Tutor module enabled.');
+        console.log('📝 Manual quiz creation available.');
     </script>
 </body>
 </html>
